@@ -13,12 +13,12 @@ return new class extends Migration
     {
         Schema::create('bookings', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('vehicle_id')->index();
+            $table->foreignId('customer_id')->index();
             $table->string('pickup_address');
             $table->string('drop_address');
             $table->datetime('pickup_datetime');
             $table->datetime('drop_datetime');
-            $table->foreignId('vehicle_id')->index()->constrained()->onDelete('cascade');
-            $table->foreignId('customer_id')->index()->constrained()->onDelete('cascade');
             $table->enum('trip_type', ['one_way', 'round_trip', 'contractual'])->default('one_way');
             $table->enum('status', ['pending', 'confirmed', 'cancelled', 'completed'])->default('pending');
             $table->decimal('subtotal', 10, 2)->default(0);
@@ -29,9 +29,8 @@ return new class extends Migration
 
         Schema::create('booking_user', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('booking_id')->index()->constrained()->onDelete('cascade');
-            $table->foreignId('user_id')->index()->constrained()->onDelete('cascade');
-            $table->timestamps();
+            $table->foreignId('booking_id')->index();
+            $table->foreignId('user_id')->index();
         });
     }
 
@@ -41,5 +40,6 @@ return new class extends Migration
     public function down(): void
     {
         Schema::dropIfExists('bookings');
+        Schema::dropIfExists('booking_user');
     }
 };

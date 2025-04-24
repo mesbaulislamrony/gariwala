@@ -18,13 +18,6 @@ return new class extends Migration
             $table->string('image')->nullable();
             $table->timestamps();
         });
-
-        Schema::create('amenity_vehicle', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('amenity_id')->index()->constrained('amenities')->cascadeOnDelete();
-            $table->foreignId('vehicle_id')->index()->constrained('vehicles')->cascadeOnDelete();
-            $table->timestamps();
-        });
     }
 
     /**
@@ -33,6 +26,5 @@ return new class extends Migration
     public function down(): void
     {
         Schema::dropIfExists('amenities');
-        Schema::dropIfExists('amenity_vehicle');
     }
 };

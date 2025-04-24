@@ -34,31 +34,35 @@ return new class extends Migration
 
         Schema::create('vehicles', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('type_id')->index();
+            $table->foreignId('brand_id')->index();
+            $table->foreignId('metro_id')->index();
             $table->string('name');
             $table->string('slug')->unique();
             $table->string('number')->index();
-            $table->foreignId('type_id')->index()->constrained()->onDelete();
-            $table->foreignId('brand_id')->index()->constrained()->onDelete();
-            $table->foreignId('metro_id')->index()->constrained()->onDelete();
             $table->string('image')->nullable();
             $table->text('description')->nullable();
-            $table->decimal('price_per_hour', 8, 2);
+            $table->unsignedInteger('odometer')->default(0);
             $table->enum('status', ['pending', 'running', 'closed'])->default('pending');
             $table->timestamps();
         });
 
+        Schema::create('amenity_vehicle', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('amenity_id')->index();
+            $table->foreignId('vehicle_id')->index();
+        });
+
         Schema::create('user_vehicle', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->index()->constrained()->onDelete('cascade');
-            $table->foreignId('vehicle_id')->index()->constrained()->onDelete('cascade');
-            $table->timestamps();
+            $table->foreignId('user_id')->index();
+            $table->foreignId('vehicle_id')->index();
         });
 
         Schema::create('customer_vehicle', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('customer_id')->index()->constrained()->onDelete('cascade');
-            $table->foreignId('vehicle_id')->index()->constrained()->onDelete('cascade');
-            $table->timestamps();
+            $table->foreignId('customer_id')->index();
+            $table->foreignId('vehicle_id')->index();
         });
     }
 
@@ -73,5 +77,6 @@ return new class extends Migration
         Schema::dropIfExists('vehicles');
         Schema::dropIfExists('user_vehicle');
         Schema::dropIfExists('customer_vehicle');
+        Schema::dropIfExists('amenity_vehicle');
     }
 };

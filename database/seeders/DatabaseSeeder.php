@@ -13,18 +13,14 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
-
-        User::factory()->create([
-            'name' => 'Mesbaul Islam',
-            'email' => 'mesbaul@example.com',
-            'password' => \Illuminate\Support\Facades\Hash::make(12345678),
-        ]);
-
-        \App\Models\Customer::factory()->create([
-            'name' => 'Jahidul Islam',
-            'email' => 'jahidul@example.com',
-            'password' => \Illuminate\Support\Facades\Hash::make(12345678),
+        $this->call([
+            UserSeeder::class,
+            AmenitySeeder::class,
+            BrandSeeder::class,
+            MetroSeeder::class,
+            TypeSeeder::class,
+            VehicleSeeder::class,
+            AccountSeeder::class
         ]);
     }
 }
