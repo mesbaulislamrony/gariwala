@@ -17,8 +17,10 @@ return new class extends Migration
             $table->foreignId('customer_id')->index();
             $table->string('pickup_address');
             $table->string('drop_address');
-            $table->datetime('pickup_datetime');
-            $table->datetime('drop_datetime');
+            $table->date('pickup_date');
+            $table->time('pickup_time');
+            $table->date('drop_date')->nullable();
+            $table->time('drop_time')->nullable();
             $table->enum('trip_type', ['one_way', 'round_trip', 'contractual'])->default('one_way');
             $table->enum('status', ['pending', 'confirmed', 'cancelled', 'completed'])->default('pending');
             $table->decimal('subtotal', 10, 2)->default(0);
