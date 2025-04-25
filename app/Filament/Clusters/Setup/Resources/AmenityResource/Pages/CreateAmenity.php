@@ -9,4 +9,18 @@ use Filament\Resources\Pages\CreateRecord;
 class CreateAmenity extends CreateRecord
 {
     protected static string $resource = AmenityResource::class;
+    
+    protected static bool $canCreateAnother = false;
+
+    /**
+     * @return array<NavigationItem | NavigationGroup>
+     */
+    public function getSubNavigation(): array
+    {
+        if (filled($cluster = static::getCluster())) {
+            return $this->generateNavigationItems($cluster::getClusteredComponents());
+        }
+
+        return [];
+    }
 }

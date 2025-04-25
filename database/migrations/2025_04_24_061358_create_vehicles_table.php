@@ -43,7 +43,7 @@ return new class extends Migration
             $table->string('image')->nullable();
             $table->text('description')->nullable();
             $table->unsignedInteger('odometer')->default(0);
-            $table->enum('status', ['pending', 'running', 'closed'])->default('pending');
+            $table->enum('status', array_column(\App\Enums\VehicleStatus::cases(), 'value'))->default(\App\Enums\VehicleStatus::Pending->value);
             $table->timestamps();
         });
 
@@ -57,6 +57,8 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id')->index();
             $table->foreignId('vehicle_id')->index();
+            $table->enum('role', ['driver', 'helper'])->default('driver');
+            $table->timestamps();
         });
 
         Schema::create('customer_vehicle', function (Blueprint $table) {

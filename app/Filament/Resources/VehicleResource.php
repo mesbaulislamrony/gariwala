@@ -18,13 +18,51 @@ class VehicleResource extends Resource
     protected static ?string $model = Vehicle::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    
+    protected static bool $shouldRegisterNavigation = false;
 
     public static function form(Form $form): Form
     {
-        return $form
-            ->schema([
-                //
-            ]);
+        return $form->schema([
+            \Filament\Forms\Components\Grid::make(5)->schema([
+                \Filament\Forms\Components\Section::make()->schema([
+                    \Filament\Forms\Components\Grid::make(3)->schema([
+                        \Filament\Forms\Components\TextInput::make('name')
+                            ->required()
+                            ->columnSpan(2),
+                        \Filament\Forms\Components\TextInput::make('number')
+                            ->required(),
+                    ]),
+                    \Filament\Forms\Components\RichEditor::make('description')
+                        ->required(),
+                    \Filament\Forms\Components\Grid::make()->schema([
+                        \Filament\Forms\Components\TextInput::make('odometer')
+                            ->required(),
+                        \Filament\Forms\Components\Select::make('status')
+                            ->options(collect(\App\Enums\VehicleStatus::cases())->pluck('name', 'value')->toArray())
+                            ->required(),
+                    ]),
+                    \Filament\Forms\Components\CheckboxList::make('amenities')
+                        ->options(\App\Models\Amenity::all()->pluck('name', 'id')->toArray())
+                        ->bulkToggleable()
+                        ->relationship('amenities', 'name')
+                        ->columns(3)
+                        ->gridDirection('row')
+                        ->required(),
+                ])->columnSpan(3),
+                \Filament\Forms\Components\Section::make()->schema([
+                    \Filament\Forms\Components\Select::make('type_id')
+                        ->relationship('type', 'name')
+                        ->required(),
+                    \Filament\Forms\Components\Select::make('metro_id')
+                        ->relationship('metro', 'name')
+                        ->required(),
+                    \Filament\Forms\Components\Select::make('brand_id')
+                        ->relationship('brand', 'name')
+                        ->required(),
+                ])->columnSpan(2),
+            ]),
+        ]);
     }
 
     public static function table(Table $table): Table
@@ -60,7 +98,7 @@ class VehicleResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            \App\Filament\Resources\VehicleResource\RelationManagers\UserVehicleRelationManager::class,
         ];
     }
 

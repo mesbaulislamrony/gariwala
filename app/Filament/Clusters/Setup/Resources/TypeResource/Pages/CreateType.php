@@ -9,4 +9,18 @@ use Filament\Resources\Pages\CreateRecord;
 class CreateType extends CreateRecord
 {
     protected static string $resource = TypeResource::class;
+    
+    protected static bool $canCreateAnother = false;
+
+    /**
+     * @return array<NavigationItem | NavigationGroup>
+     */
+    public function getSubNavigation(): array
+    {
+        if (filled($cluster = static::getCluster())) {
+            return $this->generateNavigationItems($cluster::getClusteredComponents());
+        }
+
+        return [];
+    }
 }

@@ -27,7 +27,7 @@ class UserSeeder extends Seeder
             'name' => 'Faridul Islam',
             'email' => 'faridul@example.com',
             'password' => \Illuminate\Support\Facades\Hash::make(12345678),
-            'role' => 'driver',
+            'role' => 'employee',
         ]);
 
         $user->account()->create([

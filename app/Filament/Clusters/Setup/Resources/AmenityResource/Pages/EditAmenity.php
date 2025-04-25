@@ -16,4 +16,16 @@ class EditAmenity extends EditRecord
             Actions\DeleteAction::make(),
         ];
     }
+
+    /**
+     * @return array<NavigationItem | NavigationGroup>
+     */
+    public function getSubNavigation(): array
+    {
+        if (filled($cluster = static::getCluster())) {
+            return $this->generateNavigationItems($cluster::getClusteredComponents());
+        }
+
+        return [];
+    }
 }

@@ -24,16 +24,6 @@ class VehicleSeeder extends Seeder
             'status' => 'running',
         ]);
         $vehicle->amenities()->attach([2, 7, 5, 8, 6]);
-        $vehicle->users()->attach([1, 2]);
-        $vehicle->customers()->attach([1]);
-        $vehicle->fuelLogs()->create([
-            'fuel_type' => 'petrol',
-            'date' => Carbon::now(),
-            'odometer' => 34567,
-            'price' => 150,
-            'qty' => 10,
-            'total' => 1500
-        ]);
 
         $vehicle = \App\Models\Vehicle::create([
             'name' => 'Honda Accord',
@@ -46,14 +36,5 @@ class VehicleSeeder extends Seeder
             'status' => 'running',
         ]);
         $vehicle->amenities()->attach([3, 4, 2, 7, 9]);
-        $vehicle->users()->attach([1, 2, 3]);
-        $vehicle->fuelLogs()->create([
-            'fuel_type' => 'cng',
-            'date' => Carbon::now(),
-            'odometer' => 4567,
-            'price' => 200,
-            'qty' => 10,
-            'total' => 2000
-        ]);
     }
 }

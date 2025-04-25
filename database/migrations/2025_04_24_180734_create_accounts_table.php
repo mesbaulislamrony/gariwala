@@ -39,8 +39,7 @@ return new class extends Migration
         Schema::create('expenses', function (Blueprint $table) {
             $table->id();
             $table->foreignId('expense_category_id')->index();
-            $table->string('title');
-            $table->datetime('datetime');
+            $table->datetime('date');
             $table->decimal('amount', 10, 2);
             $table->text('description')->nullable();
             $table->timestamps();
@@ -53,7 +52,6 @@ return new class extends Migration
             $table->decimal('allowance', 10, 2)->default(0);
             $table->decimal('net_salary', 10, 2)->default(0);
             $table->decimal('commission_rate', 5, 2)->default(0);
-            $table->decimal('balance', 10, 2)->default(0);
             $table->date('joining_date');
             $table->text('note')->nullable();
             $table->timestamps();

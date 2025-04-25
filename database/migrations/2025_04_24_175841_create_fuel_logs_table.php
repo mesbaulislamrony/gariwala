@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('fuel_logs', function (Blueprint $table) {
             $table->id();
             $table->foreignId('vehicle_id')->index();
-            $table->enum('fuel_type', ['petrol', 'diesel', 'octane', 'cng'])->default('diesel');
+            $table->enum('fuel_type', array_column(\App\Enums\FualType::cases(), 'value'))->default(\App\Enums\FualType::Petrol->value);
             $table->date('date');
             $table->float('odometer');
             $table->float('price');

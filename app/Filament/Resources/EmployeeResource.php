@@ -20,12 +20,62 @@ class EmployeeResource extends Resource
     protected static ?string $navigationLabel = 'Employees';
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    
+    protected static bool $shouldRegisterNavigation = false;
 
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
-                //
+                \Filament\Forms\Components\Grid::make(5)->schema([
+                    \Filament\Forms\Components\Section::make()->schema([
+                        \Filament\Forms\Components\TextInput::make('name')
+                            ->required(),
+                        \Filament\Forms\Components\Grid::make(3)->schema([
+                            \Filament\Forms\Components\TextInput::make('email')
+                                ->required()
+                                ->email()
+                                ->columnSpan(2),
+                            \Filament\Forms\Components\Group::make()->relationship('payroll') 
+                                ->schema([
+                                    \Filament\Forms\Components\DatePicker::make('joining_date')
+                                        ->required()
+                                        ->native(false)
+                                        ->displayFormat('d F Y')
+                                        ->default(now()),
+                                ]),
+                        ]),
+                        \Filament\Forms\Components\Grid::make(2)->schema([
+                            \Filament\Forms\Components\TextInput::make('password')
+                                ->dehydrated(fn (?string $state): bool => filled($state))
+                                ->required(fn (string $operation): bool => $operation === 'create') 
+                                ->password()
+                                ->revealable(),
+                            \Filament\Forms\Components\TextInput::make('password_confirmation')
+                                ->dehydrated(fn (?string $state): bool => filled($state))
+                                ->required(fn (string $operation): bool => $operation === 'create')
+                                ->password()
+                                ->revealable(),
+                        ]),
+                    ])->columnSpan(3),
+                    \Filament\Forms\Components\Section::make('Setup Payroll')->schema([
+                        \Filament\Forms\Components\Group::make()->relationship('payroll') 
+                            ->schema([
+                                \Filament\Forms\Components\TextInput::make('basic_salary')
+                                    ->required(),
+                                \Filament\Forms\Components\Grid::make()->schema([
+                                    \Filament\Forms\Components\TextInput::make('allowance')
+                                        ->required(),
+                                    \Filament\Forms\Components\TextInput::make('commission_rate')
+                                        ->required(),
+                                ]),
+                                \Filament\Forms\Components\TextInput::make('net_salary')
+                                    ->required(),
+                                \Filament\Forms\Components\Textarea::make('note')
+                                    ->rows(3),
+                            ]),
+                    ])->columnSpan(2),
+                ]),
             ]);
     }
 

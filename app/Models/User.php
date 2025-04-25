@@ -44,6 +44,8 @@ class User extends Authenticatable
         return [
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
+            'vehicles' => 'array',
+            'role' => 'string',
         ];
     }
 
@@ -54,7 +56,7 @@ class User extends Authenticatable
 
     public function vehicles()
     {
-        return $this->hasMany(Vehicle::class);
+        return $this->hasMany(UserVehicle::class);
     }
 
     public function payroll()

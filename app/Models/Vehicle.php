@@ -6,6 +6,23 @@ use Illuminate\Database\Eloquent\Model;
 
 class Vehicle extends Model
 {
+    protected $fillable = [
+        'type_id',
+        'brand_id',
+        'metro_id',
+        'name',
+        'slug',
+        'number',
+        'image',
+        'description',
+        'odometer',
+        'status',
+    ];
+
+    protected $casts = [
+        'amenities' => 'array',
+    ];
+
     public function amenities()
     {
         return $this->belongsToMany(Amenity::class);
@@ -28,7 +45,7 @@ class Vehicle extends Model
 
     public function users()
     {
-        return $this->belongsToMany(User::class, 'user_vehicle');
+        return $this->hasMany(UserVehicle::class);
     }
 
     public function customers()

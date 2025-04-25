@@ -18,6 +18,8 @@ class TransactionResource extends Resource
     protected static ?string $model = Transaction::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    
+    protected static bool $shouldRegisterNavigation = false;
 
     public static function form(Form $form): Form
     {
@@ -31,7 +33,12 @@ class TransactionResource extends Resource
     {
         return $table
             ->columns([
-                //
+                \Filament\Tables\Columns\TextColumn::make('title')
+                    ->description(fn(Transaction $record) => \Carbon\Carbon::parse($record->datetime)->diffForHumans())
+                    ->sortable()
+                    ->searchable(),
+                \Filament\Tables\Columns\TextColumn::make('type'),
+                \Filament\Tables\Columns\TextColumn::make('amount'),
             ])
             ->filters([
                 //

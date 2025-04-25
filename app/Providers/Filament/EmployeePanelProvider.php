@@ -54,6 +54,57 @@ class EmployeePanelProvider extends PanelProvider
             ])
             ->authMiddleware([
                 Authenticate::class,
+            ])
+            ->sidebarWidth('15rem') 
+            ->breadcrumbs(false)
+            ->collapsibleNavigationGroups(false)
+            ->navigationItems([
+                \Filament\Navigation\NavigationItem::make(__('Bookings'))
+                    ->url(fn(): string => \App\Filament\Resources\BookingResource\Pages\ListBookings::getUrl())
+                    ->isActiveWhen(fn(): bool => request()->routeIs('filament.employee.resources.bookings.index'))
+                    ->icon('heroicon-m-shopping-bag'),
+                \Filament\Navigation\NavigationItem::make(__('Vehicles'))
+                    ->url(fn(): string => \App\Filament\Resources\VehicleResource\Pages\ListVehicles::getUrl())
+                    ->isActiveWhen(fn(): bool => request()->routeIs('filament.employee.resources.vehicles.index'))
+                    ->icon('heroicon-m-user-group')
+                    ->group('Manage Vehicles'),
+                \Filament\Navigation\NavigationItem::make(__('Fuel Logs'))
+                    ->url(fn(): string => \App\Filament\Resources\FuelLogResource\Pages\ListFuelLogs::getUrl())
+                    ->isActiveWhen(fn(): bool => request()->routeIs('filament.employee.resources.fuel-logs.index'))
+                    ->icon('heroicon-m-user-group')
+                    ->group('Manage Vehicles'),
+
+                \Filament\Navigation\NavigationItem::make(__('Customers'))
+                    ->url(fn(): string => \App\Filament\Resources\CustomerResource\Pages\ListCustomers::getUrl())
+                    ->isActiveWhen(fn(): bool => request()->routeIs('filament.employee.resources.customers.index'))
+                    ->icon('heroicon-m-user-group')
+                    ->group('Manage Users'),
+                \Filament\Navigation\NavigationItem::make(__('Employees'))
+                    ->url(fn(): string => \App\Filament\Resources\EmployeeResource\Pages\ListEmployees::getUrl())
+                    ->isActiveWhen(fn(): bool => request()->routeIs('filament.employee.resources.employees.index'))
+                    ->icon('heroicon-m-user')
+                    ->group('Manage Users'),
+                \Filament\Navigation\NavigationItem::make(__('Partners'))
+                    ->url(fn(): string => \App\Filament\Resources\PartnerResource\Pages\ListPartners::getUrl())
+                    ->isActiveWhen(fn(): bool => request()->routeIs('filament.employee.resources.partners.index'))
+                    ->icon('heroicon-m-light-bulb')
+                    ->group('Manage Users'),
+
+                \Filament\Navigation\NavigationItem::make(__('Expenses'))
+                    ->url(fn(): string => \App\Filament\Resources\ExpenseResource\Pages\ListExpenses::getUrl())
+                    ->isActiveWhen(fn(): bool => request()->routeIs('filament.employee.resources.expenses.index'))
+                    ->icon('heroicon-m-folder-open')
+                    ->group('Manage Accounts'),
+                \Filament\Navigation\NavigationItem::make(__('Transactions'))
+                    ->url(fn(): string => \App\Filament\Resources\TransactionResource\Pages\ListTransactions::getUrl())
+                    ->isActiveWhen(fn(): bool => request()->routeIs('filament.employee.resources.transactions.index'))
+                    ->icon('heroicon-m-folder-open')
+                    ->group('Manage Accounts'),
+                \Filament\Navigation\NavigationItem::make(__('Setup'))
+                    ->url(fn(): string => route('filament.employee.setup.resources.amenities.index'))
+                    ->isActiveWhen(fn(): bool => request()->routeIs('filament.employee.setup.*'))
+                    ->icon('heroicon-m-rocket-launch')
+                    ->group('Manage Settings'),
             ]);
     }
 }
