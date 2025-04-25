@@ -13,9 +13,38 @@ class FilterComponent extends Component implements HasForms
 
     public ?array $data = [];
 
+    public function mount(): void
+    {
+        $this->form->fill([
+            'pickup_address' => 'Dhaka',
+            'drop_address' => 'Khulna',
+            'trip_date' => now(),
+            'trip_type' => \App\Enums\TripTypeEnum::Oneway->value,
+        ]);
+    }
+
+    public function create()
+    {
+        $this->dispatch('dispatchVehicles', $this->form->getState());
+    }
+
     public function form(Form $form): Form
     {
         return $form->schema([
+            \Filament\Forms\Components\Grid::make()->schema([
+                \Filament\Forms\Components\TextInput::make('pickup_address')
+                    ->required(),
+                \Filament\Forms\Components\TextInput::make('drop_address')
+                    ->required(),
+                \Filament\Forms\Components\DatePicker::make('trip_date')
+                    ->required()
+                    ->native(false)
+                    ->displayFormat('d F Y')
+                    ->default(now()),
+                \Filament\Forms\Components\Select::make('trip_type')
+                    ->options(collect(\App\Enums\TripTypeEnum::cases())->pluck('name', 'value')->toArray())
+                    ->required(),
+            ]),
             \Filament\Forms\Components\CheckboxList::make('types')
                 ->columns(2)
                 ->options(\App\Models\Type::query()->pluck('name', 'slug')->toArray()),
@@ -27,7 +56,7 @@ class FilterComponent extends Component implements HasForms
                 ->options(\App\Models\Amenity::query()->pluck('name', 'slug')->toArray()),
             \Filament\Forms\Components\CheckboxList::make('metros')
                 ->columns(2)
-                ->options(\App\Models\Metro::query()->pluck('name', 'slug')->toArray()),    
+                ->options(\App\Models\Metro::query()->pluck('name', 'slug')->toArray()),
         ])->statePath('data');
     }
 

@@ -10,7 +10,7 @@ enum VehicleStatus: string
 
     public function getLabel(): ?string
     {
-        return match($this) {
+        return match ($this) {
             self::Pending => 'Pending',
             self::Running => 'Running',
             self::Closed => 'Closed',
@@ -19,7 +19,7 @@ enum VehicleStatus: string
 
     public function getIcon(): string
     {
-        return match($this) {
+        return match ($this) {
             self::Pending => 'heroicon-o-calendar-week',
             self::Running => 'heroicon-o-calendar-month',
             self::Closed => 'heroicon-o-calendar',

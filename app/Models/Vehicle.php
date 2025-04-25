@@ -19,9 +19,9 @@ class Vehicle extends Model
         'status',
     ];
 
-    protected $casts = [
-        'amenities' => 'array',
-    ];
+    // protected $casts = [
+    //     'amenities' => 'array',
+    // ];
 
     public function amenities()
     {

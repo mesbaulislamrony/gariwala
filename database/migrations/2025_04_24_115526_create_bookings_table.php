@@ -19,9 +19,7 @@ return new class extends Migration
             $table->string('drop_address');
             $table->date('pickup_date');
             $table->time('pickup_time');
-            $table->date('drop_date')->nullable();
-            $table->time('drop_time')->nullable();
-            $table->enum('trip_type', ['one_way', 'round_trip', 'contractual'])->default('one_way');
+            $table->enum('trip_type', array_column(\App\Enums\TripTypeEnum::cases(), 'value'))->default(\App\Enums\TripTypeEnum::Oneway->value);
             $table->enum('status', ['pending', 'confirmed', 'cancelled', 'completed'])->default('pending');
             $table->decimal('subtotal', 10, 2)->default(0);
             $table->decimal('discount', 10, 2)->default(0);

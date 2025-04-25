@@ -21,7 +21,7 @@ class SearchComponent extends Component implements HasForms
             'pickup_date' => now(),
         ]);
     }
-    
+
     public function create()
     {
         $this->dispatch('dispatchVehicles');
@@ -29,21 +29,7 @@ class SearchComponent extends Component implements HasForms
 
     public function form(Form $form): Form
     {
-        return $form->schema([
-            \Filament\Forms\Components\Grid::make(5)->schema([
-                \Filament\Forms\Components\TextInput::make('pickup_address')
-                    ->columnSpan(2)
-                    ->required(),
-                \Filament\Forms\Components\TextInput::make('drop_address')
-                    ->columnSpan(2)
-                    ->required(),
-                \Filament\Forms\Components\DatePicker::make('pickup_date')
-                    ->required()
-                    ->native(false)
-                    ->displayFormat('d F Y')
-                    ->default(now()),
-            ]),
-        ])->statePath('data');
+        return $form->schema([])->statePath('data');
     }
 
     public function render()
