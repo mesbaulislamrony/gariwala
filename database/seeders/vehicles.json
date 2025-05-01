@@ -1,0 +1,1425 @@
+[
+    {
+        "name": "Mercedes Benz Expert",
+        "slug": "mercedes-benz-expert",
+        "number": "KA-9772",
+        "type_id": 1,
+        "brand_id": 7,
+        "metro_id": 4,
+        "description": "Understand realize environment TV participant everything national.",
+        "amenities": [
+            10,
+            6
+        ]
+    },
+    {
+        "name": "Nissan Although",
+        "slug": "nissan-although",
+        "number": "KA-9053",
+        "type_id": 1,
+        "brand_id": 6,
+        "metro_id": 2,
+        "description": "That leg party save later house huge represent.",
+        "amenities": [
+            10,
+            8
+        ]
+    },
+    {
+        "name": "Nissan Other",
+        "slug": "nissan-other",
+        "number": "KA-4864",
+        "type_id": 2,
+        "brand_id": 6,
+        "metro_id": 5,
+        "description": "Social according thing hit base race during.",
+        "amenities": [
+            1,
+            5,
+            7
+        ]
+    },
+    {
+        "name": "Honda Baby",
+        "slug": "honda-baby",
+        "number": "LA-9739",
+        "type_id": 1,
+        "brand_id": 2,
+        "metro_id": 2,
+        "description": "Hope somebody among nature foot poor natural ok.",
+        "amenities": [
+            10,
+            2,
+            8,
+            3,
+            9
+        ]
+    },
+    {
+        "name": "Mazda Want",
+        "slug": "mazda-want",
+        "number": "KA-2095",
+        "type_id": 3,
+        "brand_id": 4,
+        "metro_id": 5,
+        "description": "Could up the be.",
+        "amenities": [
+            1,
+            9,
+            8,
+            6
+        ]
+    },
+    {
+        "name": "Mercedes Benz Assume",
+        "slug": "mercedes-benz-assume",
+        "number": "RA-6045",
+        "type_id": 2,
+        "brand_id": 7,
+        "metro_id": 4,
+        "description": "Line likely recently less determine instead.",
+        "amenities": [
+            7,
+            8,
+            3,
+            9
+        ]
+    },
+    {
+        "name": "Toyota Again",
+        "slug": "toyota-again",
+        "number": "RA-6792",
+        "type_id": 3,
+        "brand_id": 1,
+        "metro_id": 1,
+        "description": "Positive social conference money.",
+        "amenities": [
+            10,
+            5,
+            4,
+            1,
+            6
+        ]
+    },
+    {
+        "name": "Suzuki Item",
+        "slug": "suzuki-item",
+        "number": "KA-4429",
+        "type_id": 3,
+        "brand_id": 3,
+        "metro_id": 2,
+        "description": "Agree seat particularly glass impact can parent.",
+        "amenities": [
+            8,
+            6,
+            7,
+            2,
+            10
+        ]
+    },
+    {
+        "name": "Mercedes Benz Trouble",
+        "slug": "mercedes-benz-trouble",
+        "number": "KA-4195",
+        "type_id": 1,
+        "brand_id": 7,
+        "metro_id": 6,
+        "description": "Product physical would white power certainly store.",
+        "amenities": [
+            9,
+            3,
+            2
+        ]
+    },
+    {
+        "name": "Mercedes Benz Despite",
+        "slug": "mercedes-benz-despite",
+        "number": "LA-7833",
+        "type_id": 2,
+        "brand_id": 7,
+        "metro_id": 6,
+        "description": "Nature drug first police throw media my wrong.",
+        "amenities": [
+            7,
+            9,
+            8,
+            10,
+            4
+        ]
+    },
+    {
+        "name": "Nissan Pretty",
+        "slug": "nissan-pretty",
+        "number": "DA-8828",
+        "type_id": 3,
+        "brand_id": 6,
+        "metro_id": 4,
+        "description": "Measure provide training sit.",
+        "amenities": [
+            10,
+            6,
+            3
+        ]
+    },
+    {
+        "name": "Suzuki Memory",
+        "slug": "suzuki-memory",
+        "number": "KA-3448",
+        "type_id": 1,
+        "brand_id": 3,
+        "metro_id": 5,
+        "description": "Baby prepare especially address military friend.",
+        "amenities": [
+            3,
+            7
+        ]
+    },
+    {
+        "name": "Honda Front",
+        "slug": "honda-front",
+        "number": "LA-8274",
+        "type_id": 3,
+        "brand_id": 2,
+        "metro_id": 4,
+        "description": "Measure institution spend.",
+        "amenities": [
+            8,
+            1,
+            6,
+            7
+        ]
+    },
+    {
+        "name": "Mazda Once",
+        "slug": "mazda-once",
+        "number": "DA-3145",
+        "type_id": 1,
+        "brand_id": 4,
+        "metro_id": 3,
+        "description": "Sport about right piece team top.",
+        "amenities": [
+            9,
+            6,
+            2,
+            7
+        ]
+    },
+    {
+        "name": "Honda Fight",
+        "slug": "honda-fight",
+        "number": "KA-1238",
+        "type_id": 1,
+        "brand_id": 2,
+        "metro_id": 1,
+        "description": "Message for adult north all before.",
+        "amenities": [
+            2,
+            6,
+            5
+        ]
+    },
+    {
+        "name": "Suzuki Spend",
+        "slug": "suzuki-spend",
+        "number": "RA-1438",
+        "type_id": 2,
+        "brand_id": 3,
+        "metro_id": 5,
+        "description": "Soon our late environment.",
+        "amenities": [
+            5,
+            4,
+            3,
+            1,
+            8
+        ]
+    },
+    {
+        "name": "Suzuki Member",
+        "slug": "suzuki-member",
+        "number": "KA-8456",
+        "type_id": 1,
+        "brand_id": 3,
+        "metro_id": 4,
+        "description": "Professional with show bag support.",
+        "amenities": [
+            3,
+            5,
+            10,
+            6
+        ]
+    },
+    {
+        "name": "Audi Education",
+        "slug": "audi-education",
+        "number": "DA-7265",
+        "type_id": 2,
+        "brand_id": 5,
+        "metro_id": 3,
+        "description": "President tax cost build total.",
+        "amenities": [
+            10,
+            3,
+            2,
+            6,
+            8
+        ]
+    },
+    {
+        "name": "Mercedes Benz Resource",
+        "slug": "mercedes-benz-resource",
+        "number": "KA-4982",
+        "type_id": 3,
+        "brand_id": 7,
+        "metro_id": 4,
+        "description": "Industry rise where cold eight.",
+        "amenities": [
+            1,
+            10
+        ]
+    },
+    {
+        "name": "Audi Recognize",
+        "slug": "audi-recognize",
+        "number": "RA-6456",
+        "type_id": 2,
+        "brand_id": 5,
+        "metro_id": 1,
+        "description": "Which arm us modern that.",
+        "amenities": [
+            5,
+            10
+        ]
+    },
+    {
+        "name": "Mazda Blood",
+        "slug": "mazda-blood",
+        "number": "KA-4348",
+        "type_id": 3,
+        "brand_id": 4,
+        "metro_id": 1,
+        "description": "Role Mrs bed sell.",
+        "amenities": [
+            10,
+            2,
+            3
+        ]
+    },
+    {
+        "name": "Toyota Gun",
+        "slug": "toyota-gun",
+        "number": "LA-5476",
+        "type_id": 3,
+        "brand_id": 1,
+        "metro_id": 3,
+        "description": "Thousand police ability build out cold.",
+        "amenities": [
+            8,
+            5
+        ]
+    },
+    {
+        "name": "Suzuki Focus",
+        "slug": "suzuki-focus",
+        "number": "DA-5867",
+        "type_id": 2,
+        "brand_id": 3,
+        "metro_id": 4,
+        "description": "Away nice budget sea environmental interesting offer.",
+        "amenities": [
+            10,
+            1,
+            7,
+            3,
+            6
+        ]
+    },
+    {
+        "name": "Nissan Positive",
+        "slug": "nissan-positive",
+        "number": "DA-3323",
+        "type_id": 1,
+        "brand_id": 6,
+        "metro_id": 6,
+        "description": "Everyone especially best business coach deep me.",
+        "amenities": [
+            3,
+            8
+        ]
+    },
+    {
+        "name": "Audi Share",
+        "slug": "audi-share",
+        "number": "RA-2139",
+        "type_id": 3,
+        "brand_id": 5,
+        "metro_id": 5,
+        "description": "Others describe success seek.",
+        "amenities": [
+            2,
+            1,
+            3,
+            9
+        ]
+    },
+    {
+        "name": "Suzuki Image",
+        "slug": "suzuki-image",
+        "number": "RA-7782",
+        "type_id": 1,
+        "brand_id": 3,
+        "metro_id": 4,
+        "description": "Worry close water owner modern.",
+        "amenities": [
+            9,
+            6
+        ]
+    },
+    {
+        "name": "Mazda Pay",
+        "slug": "mazda-pay",
+        "number": "LA-5842",
+        "type_id": 2,
+        "brand_id": 4,
+        "metro_id": 6,
+        "description": "Kitchen final time main myself.",
+        "amenities": [
+            1,
+            8,
+            9
+        ]
+    },
+    {
+        "name": "Honda Leg",
+        "slug": "honda-leg",
+        "number": "RA-6020",
+        "type_id": 1,
+        "brand_id": 2,
+        "metro_id": 5,
+        "description": "Fear new picture many this degree political.",
+        "amenities": [
+            6,
+            8
+        ]
+    },
+    {
+        "name": "Toyota Pm",
+        "slug": "toyota-pm",
+        "number": "KA-7273",
+        "type_id": 1,
+        "brand_id": 1,
+        "metro_id": 6,
+        "description": "Fund add value tree send new from.",
+        "amenities": [
+            3,
+            9,
+            7,
+            2,
+            5
+        ]
+    },
+    {
+        "name": "Toyota Large",
+        "slug": "toyota-large",
+        "number": "LA-8079",
+        "type_id": 2,
+        "brand_id": 1,
+        "metro_id": 2,
+        "description": "They serious right grow.",
+        "amenities": [
+            7,
+            2,
+            9
+        ]
+    },
+    {
+        "name": "Suzuki Past",
+        "slug": "suzuki-past",
+        "number": "KA-9268",
+        "type_id": 3,
+        "brand_id": 3,
+        "metro_id": 5,
+        "description": "Recognize according next fill benefit section.",
+        "amenities": [
+            1,
+            3,
+            4,
+            7,
+            10
+        ]
+    },
+    {
+        "name": "Suzuki Score",
+        "slug": "suzuki-score",
+        "number": "KA-3960",
+        "type_id": 3,
+        "brand_id": 3,
+        "metro_id": 6,
+        "description": "From population push wrong.",
+        "amenities": [
+            4,
+            3,
+            9
+        ]
+    },
+    {
+        "name": "Audi Will",
+        "slug": "audi-will",
+        "number": "DA-5495",
+        "type_id": 2,
+        "brand_id": 5,
+        "metro_id": 5,
+        "description": "Keep occur stand author.",
+        "amenities": [
+            6,
+            3,
+            2,
+            8
+        ]
+    },
+    {
+        "name": "Mazda Wish",
+        "slug": "mazda-wish",
+        "number": "KA-8255",
+        "type_id": 1,
+        "brand_id": 4,
+        "metro_id": 1,
+        "description": "Test question red test.",
+        "amenities": [
+            2,
+            6,
+            9,
+            3
+        ]
+    },
+    {
+        "name": "Toyota Firm",
+        "slug": "toyota-firm",
+        "number": "RA-9953",
+        "type_id": 3,
+        "brand_id": 1,
+        "metro_id": 2,
+        "description": "Girl future since almost.",
+        "amenities": [
+            9,
+            10,
+            7,
+            8
+        ]
+    },
+    {
+        "name": "Audi With",
+        "slug": "audi-with",
+        "number": "KA-8297",
+        "type_id": 1,
+        "brand_id": 5,
+        "metro_id": 1,
+        "description": "Animal or little activity much hot.",
+        "amenities": [
+            7,
+            5,
+            2,
+            10,
+            3
+        ]
+    },
+    {
+        "name": "Nissan Skill",
+        "slug": "nissan-skill",
+        "number": "RA-9751",
+        "type_id": 3,
+        "brand_id": 6,
+        "metro_id": 6,
+        "description": "Baby own know we outside teacher address.",
+        "amenities": [
+            8,
+            6,
+            9,
+            7
+        ]
+    },
+    {
+        "name": "Toyota Order",
+        "slug": "toyota-order",
+        "number": "KA-2027",
+        "type_id": 3,
+        "brand_id": 1,
+        "metro_id": 4,
+        "description": "Choice board threat put light conference law.",
+        "amenities": [
+            4,
+            1,
+            6
+        ]
+    },
+    {
+        "name": "Nissan Clearly",
+        "slug": "nissan-clearly",
+        "number": "RA-6676",
+        "type_id": 1,
+        "brand_id": 6,
+        "metro_id": 3,
+        "description": "Generation enough bag member whom wear.",
+        "amenities": [
+            1,
+            7,
+            9,
+            3
+        ]
+    },
+    {
+        "name": "Mazda Fill",
+        "slug": "mazda-fill",
+        "number": "DA-9330",
+        "type_id": 2,
+        "brand_id": 4,
+        "metro_id": 5,
+        "description": "Turn black gun administration.",
+        "amenities": [
+            8,
+            6,
+            4,
+            1
+        ]
+    },
+    {
+        "name": "Toyota Take",
+        "slug": "toyota-take",
+        "number": "RA-2611",
+        "type_id": 1,
+        "brand_id": 1,
+        "metro_id": 3,
+        "description": "Different town everyone.",
+        "amenities": [
+            9,
+            1,
+            7
+        ]
+    },
+    {
+        "name": "Suzuki Discussion",
+        "slug": "suzuki-discussion",
+        "number": "LA-1839",
+        "type_id": 2,
+        "brand_id": 3,
+        "metro_id": 6,
+        "description": "Other same own tell offer later trouble.",
+        "amenities": [
+            3,
+            2
+        ]
+    },
+    {
+        "name": "Suzuki Half",
+        "slug": "suzuki-half",
+        "number": "RA-5362",
+        "type_id": 1,
+        "brand_id": 3,
+        "metro_id": 2,
+        "description": "Development receive method either.",
+        "amenities": [
+            9,
+            2,
+            7,
+            6
+        ]
+    },
+    {
+        "name": "Nissan Off",
+        "slug": "nissan-off",
+        "number": "DA-8957",
+        "type_id": 2,
+        "brand_id": 6,
+        "metro_id": 2,
+        "description": "Raise opportunity light new responsibility specific month.",
+        "amenities": [
+            3,
+            8
+        ]
+    },
+    {
+        "name": "Mazda Law",
+        "slug": "mazda-law",
+        "number": "RA-6544",
+        "type_id": 3,
+        "brand_id": 4,
+        "metro_id": 6,
+        "description": "Exist step TV authority.",
+        "amenities": [
+            5,
+            3,
+            1,
+            4
+        ]
+    },
+    {
+        "name": "Mazda I",
+        "slug": "mazda-i",
+        "number": "KA-9097",
+        "type_id": 2,
+        "brand_id": 4,
+        "metro_id": 1,
+        "description": "Just material three but to cold.",
+        "amenities": [
+            3,
+            6
+        ]
+    },
+    {
+        "name": "Toyota Structure",
+        "slug": "toyota-structure",
+        "number": "KA-3263",
+        "type_id": 1,
+        "brand_id": 1,
+        "metro_id": 6,
+        "description": "Campaign health institution discussion support those near.",
+        "amenities": [
+            1,
+            9,
+            5
+        ]
+    },
+    {
+        "name": "Toyota Movie",
+        "slug": "toyota-movie",
+        "number": "KA-6075",
+        "type_id": 3,
+        "brand_id": 1,
+        "metro_id": 1,
+        "description": "Why quickly plan type action professional.",
+        "amenities": [
+            7,
+            9,
+            1
+        ]
+    },
+    {
+        "name": "Mercedes Benz Traditional",
+        "slug": "mercedes-benz-traditional",
+        "number": "DA-5314",
+        "type_id": 1,
+        "brand_id": 7,
+        "metro_id": 6,
+        "description": "Practice like feeling include sound near probably.",
+        "amenities": [
+            2,
+            6,
+            8
+        ]
+    },
+    {
+        "name": "Mazda Trouble",
+        "slug": "mazda-trouble",
+        "number": "KA-6420",
+        "type_id": 1,
+        "brand_id": 4,
+        "metro_id": 2,
+        "description": "Clear plan later everyone five red.",
+        "amenities": [
+            6,
+            7,
+            1,
+            2
+        ]
+    },
+    {
+        "name": "Honda Effect",
+        "slug": "honda-effect",
+        "number": "DA-1561",
+        "type_id": 2,
+        "brand_id": 2,
+        "metro_id": 4,
+        "description": "Trouble person after prepare behind new.",
+        "amenities": [
+            10,
+            9,
+            6
+        ]
+    },
+    {
+        "name": "Mercedes Benz Difficult",
+        "slug": "mercedes-benz-difficult",
+        "number": "KA-5271",
+        "type_id": 3,
+        "brand_id": 7,
+        "metro_id": 5,
+        "description": "Threat them sure pass hope painting light different.",
+        "amenities": [
+            5,
+            7,
+            2,
+            6,
+            1
+        ]
+    },
+    {
+        "name": "Honda Tend",
+        "slug": "honda-tend",
+        "number": "LA-1821",
+        "type_id": 1,
+        "brand_id": 2,
+        "metro_id": 4,
+        "description": "Last cup financial lawyer environmental business.",
+        "amenities": [
+            7,
+            8,
+            6,
+            2,
+            10
+        ]
+    },
+    {
+        "name": "Suzuki Despite",
+        "slug": "suzuki-despite",
+        "number": "DA-5664",
+        "type_id": 1,
+        "brand_id": 3,
+        "metro_id": 3,
+        "description": "Good owner determine between.",
+        "amenities": [
+            5,
+            10,
+            7,
+            3,
+            8
+        ]
+    },
+    {
+        "name": "Mazda Either",
+        "slug": "mazda-either",
+        "number": "LA-9203",
+        "type_id": 3,
+        "brand_id": 4,
+        "metro_id": 6,
+        "description": "Letter lay open evidence factor model hair.",
+        "amenities": [
+            6,
+            3,
+            2,
+            10,
+            7
+        ]
+    },
+    {
+        "name": "Mazda Make",
+        "slug": "mazda-make",
+        "number": "LA-2189",
+        "type_id": 1,
+        "brand_id": 4,
+        "metro_id": 4,
+        "description": "Laugh table place.",
+        "amenities": [
+            3,
+            8,
+            7,
+            5
+        ]
+    },
+    {
+        "name": "Toyota Most",
+        "slug": "toyota-most",
+        "number": "RA-3457",
+        "type_id": 1,
+        "brand_id": 1,
+        "metro_id": 4,
+        "description": "Issue thought pattern company majority professor time.",
+        "amenities": [
+            10,
+            1
+        ]
+    },
+    {
+        "name": "Toyota Meeting",
+        "slug": "toyota-meeting",
+        "number": "RA-7550",
+        "type_id": 3,
+        "brand_id": 1,
+        "metro_id": 1,
+        "description": "There about entire for.",
+        "amenities": [
+            7,
+            2,
+            8,
+            10,
+            4
+        ]
+    },
+    {
+        "name": "Nissan Officer",
+        "slug": "nissan-officer",
+        "number": "DA-1154",
+        "type_id": 3,
+        "brand_id": 6,
+        "metro_id": 4,
+        "description": "Hard why budget your human speech plant.",
+        "amenities": [
+            6,
+            10,
+            5,
+            4
+        ]
+    },
+    {
+        "name": "Suzuki Type",
+        "slug": "suzuki-type",
+        "number": "LA-8988",
+        "type_id": 2,
+        "brand_id": 3,
+        "metro_id": 2,
+        "description": "Term near international yet third.",
+        "amenities": [
+            2,
+            10,
+            7,
+            5,
+            6
+        ]
+    },
+    {
+        "name": "Mercedes Benz Thought",
+        "slug": "mercedes-benz-thought",
+        "number": "LA-9212",
+        "type_id": 1,
+        "brand_id": 7,
+        "metro_id": 2,
+        "description": "Ever especially next factor kid simply officer past.",
+        "amenities": [
+            1,
+            4
+        ]
+    },
+    {
+        "name": "Honda Receive",
+        "slug": "honda-receive",
+        "number": "KA-3401",
+        "type_id": 2,
+        "brand_id": 2,
+        "metro_id": 3,
+        "description": "Environment fill yes prepare.",
+        "amenities": [
+            10,
+            5,
+            1,
+            7,
+            8
+        ]
+    },
+    {
+        "name": "Suzuki System",
+        "slug": "suzuki-system",
+        "number": "LA-1283",
+        "type_id": 2,
+        "brand_id": 3,
+        "metro_id": 2,
+        "description": "Think choice challenge can military join early.",
+        "amenities": [
+            10,
+            1,
+            2
+        ]
+    },
+    {
+        "name": "Nissan Purpose",
+        "slug": "nissan-purpose",
+        "number": "RA-7554",
+        "type_id": 2,
+        "brand_id": 6,
+        "metro_id": 1,
+        "description": "Yeah production available administration campaign next edge.",
+        "amenities": [
+            2,
+            10,
+            8,
+            5,
+            1
+        ]
+    },
+    {
+        "name": "Audi Might",
+        "slug": "audi-might",
+        "number": "KA-6993",
+        "type_id": 1,
+        "brand_id": 5,
+        "metro_id": 6,
+        "description": "Half add dinner own real possible.",
+        "amenities": [
+            6,
+            5
+        ]
+    },
+    {
+        "name": "Mercedes Benz Chair",
+        "slug": "mercedes-benz-chair",
+        "number": "RA-2849",
+        "type_id": 2,
+        "brand_id": 7,
+        "metro_id": 1,
+        "description": "Various somebody authority alone.",
+        "amenities": [
+            2,
+            4,
+            6,
+            8,
+            3
+        ]
+    },
+    {
+        "name": "Suzuki Safe",
+        "slug": "suzuki-safe",
+        "number": "LA-3550",
+        "type_id": 2,
+        "brand_id": 3,
+        "metro_id": 4,
+        "description": "Present take usually hour time.",
+        "amenities": [
+            1,
+            4,
+            9,
+            10,
+            6
+        ]
+    },
+    {
+        "name": "Toyota Require",
+        "slug": "toyota-require",
+        "number": "KA-2857",
+        "type_id": 1,
+        "brand_id": 1,
+        "metro_id": 2,
+        "description": "Probably dinner see.",
+        "amenities": [
+            8,
+            9,
+            7,
+            10,
+            4
+        ]
+    },
+    {
+        "name": "Honda Brother",
+        "slug": "honda-brother",
+        "number": "KA-9633",
+        "type_id": 2,
+        "brand_id": 2,
+        "metro_id": 2,
+        "description": "Human ready keep choice.",
+        "amenities": [
+            7,
+            1
+        ]
+    },
+    {
+        "name": "Mercedes Benz Five",
+        "slug": "mercedes-benz-five",
+        "number": "DA-3625",
+        "type_id": 2,
+        "brand_id": 7,
+        "metro_id": 5,
+        "description": "Pm street watch ball under fear.",
+        "amenities": [
+            3,
+            10,
+            6,
+            8,
+            1
+        ]
+    },
+    {
+        "name": "Nissan Computer",
+        "slug": "nissan-computer",
+        "number": "LA-9159",
+        "type_id": 3,
+        "brand_id": 6,
+        "metro_id": 3,
+        "description": "Than dinner PM ask left myself beat.",
+        "amenities": [
+            7,
+            2,
+            5,
+            4
+        ]
+    },
+    {
+        "name": "Audi Image",
+        "slug": "audi-image",
+        "number": "RA-7450",
+        "type_id": 1,
+        "brand_id": 5,
+        "metro_id": 2,
+        "description": "Western accept especially himself pattern difference each.",
+        "amenities": [
+            2,
+            8
+        ]
+    },
+    {
+        "name": "Audi Response",
+        "slug": "audi-response",
+        "number": "RA-9006",
+        "type_id": 3,
+        "brand_id": 5,
+        "metro_id": 1,
+        "description": "Deep choice practice might.",
+        "amenities": [
+            7,
+            9,
+            2
+        ]
+    },
+    {
+        "name": "Suzuki Certainly",
+        "slug": "suzuki-certainly",
+        "number": "KA-9152",
+        "type_id": 3,
+        "brand_id": 3,
+        "metro_id": 6,
+        "description": "Television less hand man pay network carry.",
+        "amenities": [
+            3,
+            9
+        ]
+    },
+    {
+        "name": "Suzuki Page",
+        "slug": "suzuki-page",
+        "number": "DA-8597",
+        "type_id": 2,
+        "brand_id": 3,
+        "metro_id": 3,
+        "description": "Baby position itself international TV through first difficult.",
+        "amenities": [
+            8,
+            5,
+            7
+        ]
+    },
+    {
+        "name": "Suzuki Interview",
+        "slug": "suzuki-interview",
+        "number": "RA-9058",
+        "type_id": 1,
+        "brand_id": 3,
+        "metro_id": 4,
+        "description": "Anything I market meet.",
+        "amenities": [
+            7,
+            8
+        ]
+    },
+    {
+        "name": "Toyota Now",
+        "slug": "toyota-now",
+        "number": "LA-8323",
+        "type_id": 2,
+        "brand_id": 1,
+        "metro_id": 2,
+        "description": "Any thus at win marriage middle game.",
+        "amenities": [
+            3,
+            2,
+            8,
+            10,
+            6
+        ]
+    },
+    {
+        "name": "Nissan Finally",
+        "slug": "nissan-finally",
+        "number": "KA-6463",
+        "type_id": 2,
+        "brand_id": 6,
+        "metro_id": 2,
+        "description": "Ten class about face.",
+        "amenities": [
+            1,
+            8,
+            10,
+            7,
+            3
+        ]
+    },
+    {
+        "name": "Honda Young",
+        "slug": "honda-young",
+        "number": "RA-2945",
+        "type_id": 3,
+        "brand_id": 2,
+        "metro_id": 2,
+        "description": "National sense seek future.",
+        "amenities": [
+            6,
+            2,
+            7
+        ]
+    },
+    {
+        "name": "Mazda Laugh",
+        "slug": "mazda-laugh",
+        "number": "DA-4895",
+        "type_id": 2,
+        "brand_id": 4,
+        "metro_id": 6,
+        "description": "Office than the front only.",
+        "amenities": [
+            10,
+            3,
+            7
+        ]
+    },
+    {
+        "name": "Audi Open",
+        "slug": "audi-open",
+        "number": "RA-9357",
+        "type_id": 1,
+        "brand_id": 5,
+        "metro_id": 2,
+        "description": "Green week find avoid southern billion staff.",
+        "amenities": [
+            9,
+            5,
+            6,
+            1
+        ]
+    },
+    {
+        "name": "Mazda Decade",
+        "slug": "mazda-decade",
+        "number": "LA-5165",
+        "type_id": 1,
+        "brand_id": 4,
+        "metro_id": 3,
+        "description": "Fine short blood model high.",
+        "amenities": [
+            4,
+            6,
+            8
+        ]
+    },
+    {
+        "name": "Toyota Loss",
+        "slug": "toyota-loss",
+        "number": "KA-8422",
+        "type_id": 2,
+        "brand_id": 1,
+        "metro_id": 3,
+        "description": "Just risk despite if.",
+        "amenities": [
+            2,
+            1,
+            8
+        ]
+    },
+    {
+        "name": "Suzuki Go",
+        "slug": "suzuki-go",
+        "number": "KA-4383",
+        "type_id": 3,
+        "brand_id": 3,
+        "metro_id": 1,
+        "description": "Wind land accept north late wife early.",
+        "amenities": [
+            1,
+            8,
+            5
+        ]
+    },
+    {
+        "name": "Audi Relate",
+        "slug": "audi-relate",
+        "number": "KA-1977",
+        "type_id": 2,
+        "brand_id": 5,
+        "metro_id": 2,
+        "description": "Court night accept law garden challenge.",
+        "amenities": [
+            5,
+            7,
+            1,
+            2
+        ]
+    },
+    {
+        "name": "Mazda Happen",
+        "slug": "mazda-happen",
+        "number": "KA-5900",
+        "type_id": 3,
+        "brand_id": 4,
+        "metro_id": 6,
+        "description": "Around people rock step understand.",
+        "amenities": [
+            1,
+            6
+        ]
+    },
+    {
+        "name": "Nissan Me",
+        "slug": "nissan-me",
+        "number": "KA-2004",
+        "type_id": 2,
+        "brand_id": 6,
+        "metro_id": 2,
+        "description": "Wall it song six.",
+        "amenities": [
+            2,
+            6,
+            9,
+            7
+        ]
+    },
+    {
+        "name": "Honda Hold",
+        "slug": "honda-hold",
+        "number": "LA-3292",
+        "type_id": 3,
+        "brand_id": 2,
+        "metro_id": 1,
+        "description": "Husband grow military forward.",
+        "amenities": [
+            5,
+            8
+        ]
+    },
+    {
+        "name": "Mazda Event",
+        "slug": "mazda-event",
+        "number": "RA-4470",
+        "type_id": 3,
+        "brand_id": 4,
+        "metro_id": 2,
+        "description": "May billion itself yet.",
+        "amenities": [
+            8,
+            10,
+            6,
+            9
+        ]
+    },
+    {
+        "name": "Audi College",
+        "slug": "audi-college",
+        "number": "LA-8336",
+        "type_id": 2,
+        "brand_id": 5,
+        "metro_id": 4,
+        "description": "Eat really pressure.",
+        "amenities": [
+            6,
+            4,
+            10,
+            2
+        ]
+    },
+    {
+        "name": "Honda Image",
+        "slug": "honda-image",
+        "number": "RA-3716",
+        "type_id": 3,
+        "brand_id": 2,
+        "metro_id": 6,
+        "description": "Develop common themselves major.",
+        "amenities": [
+            5,
+            10,
+            4,
+            2,
+            3
+        ]
+    },
+    {
+        "name": "Nissan Recognize",
+        "slug": "nissan-recognize",
+        "number": "RA-3013",
+        "type_id": 2,
+        "brand_id": 6,
+        "metro_id": 3,
+        "description": "Into matter well now someone property treat.",
+        "amenities": [
+            1,
+            7,
+            4,
+            10,
+            6
+        ]
+    },
+    {
+        "name": "Toyota Office",
+        "slug": "toyota-office",
+        "number": "DA-3323",
+        "type_id": 3,
+        "brand_id": 1,
+        "metro_id": 5,
+        "description": "Eye official behavior cover adult wall.",
+        "amenities": [
+            1,
+            8,
+            10
+        ]
+    },
+    {
+        "name": "Suzuki Feel",
+        "slug": "suzuki-feel",
+        "number": "LA-7462",
+        "type_id": 2,
+        "brand_id": 3,
+        "metro_id": 6,
+        "description": "Yet camera work suggest cause.",
+        "amenities": [
+            10,
+            9
+        ]
+    },
+    {
+        "name": "Nissan Describe",
+        "slug": "nissan-describe",
+        "number": "KA-9199",
+        "type_id": 2,
+        "brand_id": 6,
+        "metro_id": 4,
+        "description": "Under weight pattern space.",
+        "amenities": [
+            5,
+            9,
+            7,
+            6
+        ]
+    },
+    {
+        "name": "Suzuki New",
+        "slug": "suzuki-new",
+        "number": "RA-7506",
+        "type_id": 1,
+        "brand_id": 3,
+        "metro_id": 6,
+        "description": "Feel minute plant lay key budget.",
+        "amenities": [
+            4,
+            6
+        ]
+    },
+    {
+        "name": "Mercedes Benz Audience",
+        "slug": "mercedes-benz-audience",
+        "number": "DA-7525",
+        "type_id": 2,
+        "brand_id": 7,
+        "metro_id": 3,
+        "description": "Spend tonight off goal enough trial quite there.",
+        "amenities": [
+            8,
+            6
+        ]
+    },
+    {
+        "name": "Audi Long",
+        "slug": "audi-long",
+        "number": "RA-3074",
+        "type_id": 3,
+        "brand_id": 5,
+        "metro_id": 3,
+        "description": "Public and shoulder around toward state major.",
+        "amenities": [
+            3,
+            5
+        ]
+    }
+]

@@ -10,7 +10,7 @@ enum UserVehicleRoleEnum: string
 
     public function getLabel(): ?string
     {
-        return match($this) {
+        return match ($this) {
             self::Partner => 'Partner',
             self::Driver => 'Driver',
             self::Helper => 'Helper',

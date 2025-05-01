@@ -11,7 +11,7 @@ enum FualType: string
 
     public function getLabel(): ?string
     {
-        return match($this) {
+        return match ($this) {
             self::Petrol => 'Petrol',
             self::Diesel => 'Diesel',
             self::Octane => 'Octane',
@@ -21,7 +21,7 @@ enum FualType: string
 
     public function getUnit(): string
     {
-        return match($this) {
+        return match ($this) {
             self::Petrol => 'Ltr',
             self::Diesel => 'Ltr',
             self::Octane => 'Ltr',

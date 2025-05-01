@@ -2,34 +2,78 @@
 
 namespace App\Livewire\Filament\Pages\Order;
 
-use Filament\Forms\Concerns\InteractsWithForms;
-use Filament\Forms\Contracts\HasForms;
-use Filament\Forms\Form;
 use Livewire\Component;
+use Filament\Forms\Form;
+use Filament\Forms\Contracts\HasForms;
+use Filament\Forms\Concerns\InteractsWithForms;
 
 class SearchComponent extends Component implements HasForms
 {
     use InteractsWithForms;
 
-    public ?array $data = [];
+    #[\Livewire\Attributes\Url]
+    public $filter = "";
+    public ?array $filters = [];
+    public ?array $search = [];
 
     public function mount(): void
     {
-        $this->form->fill([
-            'pickup_address' => 'Dhaka',
-            'drop_address' => 'Khulna',
-            'pickup_date' => now(),
-        ]);
+        parse_str($this->filter, $array);
+        $this->form->fill(
+            array_merge([
+                'trip_date' => now(),
+                'trip_type' => \App\Enums\TripTypeEnum::Oneway->value,
+            ], $array)
+        );
     }
 
     public function create()
     {
-        $this->dispatch('dispatchVehicles');
+        //
     }
 
     public function form(Form $form): Form
     {
-        return $form->schema([])->statePath('data');
+        return $form->schema([
+            \Filament\Forms\Components\Section::make()->schema([
+                \Filament\Forms\Components\CheckboxList::make('types')
+                    ->columns(2)
+                    ->reactive()
+                    ->afterStateUpdated(function ($state) {
+                        $this->filters['types'] = $state;
+                        $this->filter = \Illuminate\Support\Arr::query($this->filters);
+                        $this->dispatch('dispatchFilteredVehicles', $this->filter);
+                    })
+                    ->options(\App\Models\Type::query()->pluck('name', 'slug')->toArray()),
+                \Filament\Forms\Components\CheckboxList::make('brands')
+                    ->columns(2)
+                    ->reactive()
+                    ->afterStateUpdated(function ($state) {
+                        $this->filters['brands'] = $state;
+                        $this->filter = \Illuminate\Support\Arr::query($this->filters);
+                        $this->dispatch('dispatchFilteredVehicles', $this->filter);
+                    })
+                    ->options(\App\Models\Brand::query()->pluck('name', 'slug')->toArray()),
+                \Filament\Forms\Components\CheckboxList::make('amenities')
+                    ->columns(2)
+                    ->reactive()
+                    ->afterStateUpdated(function ($state) {
+                        $this->filters['amenities'] = $state;
+                        $this->filter = \Illuminate\Support\Arr::query($this->filters);
+                        $this->dispatch('dispatchFilteredVehicles', $this->filter);
+                    })
+                    ->options(\App\Models\Amenity::query()->pluck('name', 'slug')->toArray()),
+                \Filament\Forms\Components\CheckboxList::make('metros')
+                    ->columns(2)
+                    ->reactive()
+                    ->afterStateUpdated(function ($state) {
+                        $this->filters['metros'] = $state;
+                        $this->filter = \Illuminate\Support\Arr::query($this->filters);
+                        $this->dispatch('dispatchFilteredVehicles', $this->filter);
+                    })
+                    ->options(\App\Models\Metro::query()->pluck('name', 'slug')->toArray()),
+            ]),
+        ])->statePath('search');
     }
 
     public function render()

@@ -18,7 +18,7 @@ class BookingResource extends Resource
     protected static ?string $model = Booking::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
-    
+
     protected static bool $shouldRegisterNavigation = false;
 
     public static function form(Form $form): Form
@@ -33,7 +33,12 @@ class BookingResource extends Resource
     {
         return $table
             ->columns([
-                //
+                \Filament\Tables\Columns\TextColumn::make('customer.name')
+                    ->description(fn(Booking $record): string => $record->customer->email),
+                \Filament\Tables\Columns\TextColumn::make('pickup_address')
+                    ->description(fn(Booking $record): string => $record->drop_address)
+                    ->label('Trip Location'),
+                \Filament\Tables\Columns\TextColumn::make('trip_date'),
             ])
             ->filters([
                 //
